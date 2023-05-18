@@ -177,13 +177,6 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
 })
 
 
-
-
-
-
-
-
-
 let currentStart = document.getElementById('currentStart');
 let currentEnd = document.getElementById('currentEnd');
 let seek = document.getElementById('seek');
@@ -318,16 +311,6 @@ next.addEventListener('click', () => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
 let pop_song_left = document.getElementById('pop-song-left');
 let pop_song_right = document.getElementById('pop-song-right');
 let pop_song = document.getElementsByClassName('pop-song')[0];
@@ -354,3 +337,21 @@ pop_art_right.addEventListener('click', () => {
 pop_art_left.addEventListener('click', () => {
     Artists_bx.scrollLeft -= 330;
 })
+
+
+// Theme Light 
+const dayNight = document.querySelector(".day-night");
+dayNight.addEventListener("click", () => {
+    dayNight.querySelector("i").classList.toggle("bi-brightness-high-fill");
+    dayNight.querySelector("i").classList.toggle("bi-moon-fill");
+    document.body.classList.toggle("dark");
+})
+window.addEventListener("load", () => {
+    if (document.body.classList.contains("dark")) {
+        dayNight.querySelector("i").classList.add("bi-moon-fill");
+    }
+    else {
+        dayNight.querySelector("i").classList.add("bi-brightness-high-fill");
+    }
+}
+)

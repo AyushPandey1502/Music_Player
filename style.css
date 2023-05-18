@@ -10,14 +10,23 @@
 :root {
     --bg-color: #131312;
     --color-slide: #0b1320;
-    --color-border: #4c5262;
-    --color-111727: #111727;
+    --color-light-blue: #4c5262;
+    --color-blue: #111727;
     --color-white: #fff;
     --color-active: #36e2ec;
-
+    
     --box-shadow: #090f1f;
 }
 
+body.dark{
+    --bg-color: #7fb8d0;
+    --color-slide: #eee;
+    --color-light-blue: #c17a7a;
+    --color-blue: #fff;
+    --color-white: #832727;
+    --color-active: rgb(196, 99, 99);
+    --box-shadow: #afb4c3;
+  }
 
 body {
     width: 100%;
@@ -45,7 +54,7 @@ header .menu-slide,
     width: 25%;
     height: 90%;
     /* border: 1px solid var(--color-white); */
-    background-color: var(--color-111727);
+    background-color: var(--color-blue);
     box-shadow: 5px 0px 2px var(--box-shadow);
     color: var(--color-white);
 
@@ -60,7 +69,7 @@ header .master-play {
     width: 100%;
     height: 10%;
     /* border:1px solid #fff; */
-    background-color: var(--color-111727);
+    background-color: var(--color-blue);
     box-shadow: 0px 3px 8px var(--box-shadow);
 
 }
@@ -80,7 +89,7 @@ header .menu-slide .playlist h4 {
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
-    color: var(--color-border);
+    color: var(--color-light-blue);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -101,7 +110,7 @@ header .menu-slide .playlist h4 span::before {
     position: absolute;
     width: 4px;
     height: 4px;
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--color-light-blue);
     border-radius: 50%;
     top: -4px;
     transition: .3s linear;
@@ -161,7 +170,7 @@ header.menu-slide .menu-song li:hover {
 header.menu-slide .menu-song li span {
     font-size: 12px;
     font-weight: 600;
-    color: var(--color-border);
+    color: var(--color-light-blue);
 }
 
 header .menu-slide .menu-song li img {
@@ -182,7 +191,7 @@ header .menu-slide .menu-song li h5 {
 
 header .menu-slide .menu-song li h5 .subtitle {
     font-size: 9px;
-    color: var(--color-border);
+    color: var(--color-light-blue);
 }
 
 header .menu-slide .menu-song li .bi {
@@ -276,7 +285,7 @@ header .master-play h5 {
 
 header .master-play h5 .subtitle {
     font-size: 11px;
-    color: var(--color-border);
+    color: var(--color-light-blue);
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -406,7 +415,7 @@ header .master-play .s-icon {
     margin: 5px 5px;
     padding-left: 15px;
     left: 100px;
-
+    cursor: pointer;
 }
 
 header .master-play .vol input {
@@ -463,8 +472,10 @@ header .song-slide::before {
     position: absolute;
     width: 100%;
     height: 300px;
-    background: url('bg.png');
+    /* background: url('bg.png'); */
+    background: url('bg1.png');
     z-index: -1;
+    background-color: var(--color-blue);
 }
 
 header .song-slide nav {
@@ -485,7 +496,7 @@ header .song-slide nav ul li {
     list-style: none;
     position: relative;
     font-size: 13px;
-    color: var(--color-border);
+    color: var(--color-light-blue);
     margin-right: 25px;
     cursor: pointer;
     transition: .3s linear;
@@ -550,7 +561,6 @@ header .song-slide nav .user {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
 }
 header .song-slide nav .user img{
     width: 100%;
@@ -558,7 +568,6 @@ header .song-slide nav .user img{
     border: 1px solid var(--color-white);
     border-radius: 50%;
     box-shadow: 2px 2px 8px #121213;
-    
 }
 header .song-slide .content{
     width: 90%;
@@ -568,8 +577,6 @@ header .song-slide .content{
     padding-top: 20px;
 }
 
-
-
 header .song-slide .content h1{
     font-size: 25px;
     font-weight: 600;
@@ -577,7 +584,7 @@ header .song-slide .content h1{
 header .song-slide .content p{
     font-size: 11px;
     font-weight: 400;
-    color: var(--color-border);
+    color: var(--color-light-blue);
     margin: 5px;
 }
 
@@ -597,7 +604,6 @@ header .song-slide .content .buttons button{
     transition: .3s linear;
 }
 
-
 header .song-slide .content .buttons button:hover{
     background: none;
     color: var(--color-white);
@@ -606,10 +612,10 @@ header .song-slide .content .buttons button:hover{
 
 header .song-slide .content .buttons button:nth-child(2){
     background: none;
-    color: var(--color-white);
+    color: var(--color-active);
 }
 header .song-slide .content .buttons button:nth-child(2):hover{
-    background: var(--color-white);
+    background: var(--color-active);
     color: var(--color-white);
 }
     
@@ -617,7 +623,8 @@ header .song-slide .popular-song{
     width: 90%;
     height: auto;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 60px;
+    /* margin-top: 15px; */
     /* border: 1px solid var(--color-white); */
 }
 
@@ -699,7 +706,7 @@ header .song-slide .popular-song .pop-song li h5 .subtitle{
     overflow:hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    color:var(--color-border) ;
+    color:var(--color-light-blue) ;
 }
 header .song-slide .popular-artists{
     width: 90%;
@@ -754,63 +761,3 @@ header .song-slide .popular-artists .item::-webkit-scrollbar{
 }
 
 
-/* /////////////////////////////////// */
-/* 
-.popular-artists
-header .song-slide .popular-artists .pop-song{
-    
-header .song-slide .popular-artists .pop-song::-webkit-scrollbar{
-    display: none;
-}
-    
-header .song-slide .popular-artists .pop-song li{
-    min-width: 100px;
-    height: 140px;
-    list-style-type: none;
-    margin-right: 10px;
-    transition: .3s linear;.popular-artists
-}
-header .song-slide .popular-artists .pop-song li:hover{
-    background-color: rgb(105, 105, 170, .1);
-}
-header .song-slide .popular-song .pop-song li .img-play{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header .song-slide .popular-artists .pop-song li .img-play img{
-    width: 100%;
-    height: 100%;
-}
-
-header .song-slide .popular-song .pop-song li .img-play .bi{
-    position: absolute;
-    font-size: 20px;
-    cursor: pointer;
-    transition: .3s linear;
-    opacity: 0;
-}
-header .song-slide .popular-artists .pop-song li:hover .img-play .bi{
-    opacity: 1;
-}
-header .song-slide .popular-artists .pop-song li h5{
-    padding: 5px 0px 0px 5px;
-    line-height: 15px;
-    font-size: 10px;
-    width: 100px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-}
-header .song-slide .popular-artists .pop-song li h5 .subtitle{
-    font-size: 9px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color:var(--color-border) ;
-} */
