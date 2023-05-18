@@ -147,6 +147,7 @@ header .menu-slide .menu-song li {
     margin-bottom: 10px;
     cursor: pointer;
     transition: .3s linear;
+    /* background: rgb(105, 105, 105, .1); */
 }
 
 header .menu-slide .menu-song::-webkit-scrollbar {
@@ -213,7 +214,8 @@ header .master-play .wave .wave1 {
     margin-right: 3px;
     border-radius: 10px 10px 0px 0px;
     background: var(--color-active);
-    animation: wave .5s linear infinite;
+    /* animation: wave .5s linear infinite; */
+    animation: unset;
 }
 
 header .master-play .wave .wave1:nth-child(2) {
@@ -421,7 +423,7 @@ header .master-play .vol input {
 header .master-play .vol .vol-bar {
     position: absolute;
     background: var(--color-active);
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 0;
     transition: 1s linear;
@@ -433,7 +435,7 @@ header .master-play .vol .dot {
     height: 5px;
     background: var(--color-active);
     border-radius: 50%;
-    left: 0%;
+    left: 100%;
     top: -1.5px;
     transition: 1s linear;
     box-shadow: inset 0px 0px 3px var(--color-active);
