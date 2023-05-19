@@ -48,7 +48,7 @@ const songs = [
     },
     {
         id: "9",
-        songName: `Dilber <br><div class="subtitle">Satyameva Jayate</div>`,
+        songName: `Dilbar <br><div class="subtitle">Satyameva Jayate</div>`,
         poster: "img/9.jpg",
     },
     {
@@ -122,7 +122,7 @@ songs.forEach(element => {
     const { id, songName, poster } = element;
     let card = document.createElement('a');
     card.classList.add('card');
-    card.href = '#' + id;
+    card.href = '#' + id ;
     card.innerHTML = `
     <img src="${poster}" alt="">
     <div class="content">
@@ -136,30 +136,29 @@ let input = document.getElementsByTagName('input')[0];
 
 input.addEventListener('keyup', () => {
     let input_value = input.value.toUpperCase();
-    let items = search_result.getElementsByClassName('a');
+    let items = search_result.getElementsByTagName('a');
 
     for (let i = 0; i < items.length; i++) {
         let as = items[i].getElementsByClassName('content')[0];
-        let text_value = as.textContent || as.innerHTML;
+        let text_value = as.textContent || as.innerText;
 
         if (text_value.toUpperCase().indexOf(input_value) > -1) {
-            // items[i].style.display ='flex';
-            items[i].setAttribute('style', 'display: flex;');
+            items[i].style.display ='flex';
+            // items[i].setAttribute('style', 'display: flex;');
 
         } else {
-            // items[i].style.display ='none';
-            items[i].setAttribute('style', 'display: none;');
+            items[i].style.display ='none';
+            // items[i].setAttribute('style', 'display: none;');
 
         }
 
         if (input.value == 0) {
-            // search_result.style.display ='none';
-            search_result.setAttribute('style', 'display: none;');
+            search_result.style.display ='none';
+            // search_result.setAttribute('style', 'display: none;');
 
         } else {
-            // search_result.style.display ='';
-            search_result.setAttribute('style');
-
+            search_result.style.display ='';
+            // search_result.setAttribute('style');
         }
 
     }
