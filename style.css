@@ -25,7 +25,7 @@ body.dark {
     --color-blue: #fff;
     --color-white: #832727;
     --color-active: rgb(196, 99, 99);
-    --box-shadow: #afb4c3;
+    --box-shadow: #999ca7;
 }
 
 body {
@@ -95,7 +95,9 @@ header .menu-slide .playlist h4 {
     align-items: center;
     transition: .3s linear;
 }
-
+header .menu-slide h6 {
+    display: none;
+}
 header .menu-slide .playlist h4:hover {
     color: var(--color-white);
 }
@@ -412,14 +414,14 @@ header .master-play .vol .bi {
 
 header .master-play .s-icon {
     position: relative;
+    display: flex;
+    justify-content: center;
     color: var(--color-white);
-    font-size: 17.5px;
-    margin: 5px 5px;
+    font-size: 15.5px;
+    margin: 5px 60px;
     border: 1px solid var(--color-white);
     border-radius: 50%;
-    /* padding-left: 15px; */
     padding: 4px 8px;
-    left: 100px;
     cursor: pointer;
 }
 
@@ -478,7 +480,7 @@ header .song-slide::before {
     width: 100%;
     height: 300px;
     /* background: url('bg.png'); */
-    background: url('bg1.png');
+    background: url('bg1.png') no-repeat;
     z-index: -1;
     background-color: var(--color-blue);
 }

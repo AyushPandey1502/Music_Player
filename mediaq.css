@@ -1,0 +1,178 @@
+@media screen and (max-width: 1200px) {
+    header {
+        width: 100%;
+        transition: .5s linear;
+    }
+
+    header .menu-slide,
+    .song-slide {
+        width: 30%;
+    }
+
+    header .song-slide {
+        width: 70%;
+    }
+
+    header .song-slide .content {
+        height: 18%;
+    }
+
+    header .menu-slide h6 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:930px) {
+    header .menu-slide {
+        z-index: 999;
+        width: 40%;
+        position: absolute;
+        transition: 1s linear;
+        transform: translateX(-100%);
+    }
+
+    header .song-slide {
+        width: 100%;
+    }
+
+    header .master-play {
+        position: absolute;
+        bottom: 0;
+    }
+
+    header .master-play .s-icon {
+        position: relative;
+        bottom: 0;
+    }
+
+    header .menu-slide h6 {
+        position: absolute;
+        right: -40px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background: var(--color-blue);
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 1s linear;
+    }
+    header .master-play .s-icon {
+        font-size: 13px;
+        margin: 5px 40px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header .song-slide nav ul li {
+        position: relative;
+        font-size: 11px;
+    }
+
+    header .song-slide nav .search {
+        width: auto;
+    }
+
+    header .menu-slide {
+        width: 60%;
+    }
+
+    header .master-play {
+        z-index: 999999999999;
+
+    }
+
+    header .master-play .icon {
+        position: absolute;
+        top: -46%;
+        right: 30%;
+    }
+    header .master-play .s-icon {
+        font-size: 13px;
+        margin: 5px 30px;
+    }
+
+    header .master-play .icon::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 180px;
+        background: var(--color-blue);
+        z-index: -1;
+        border-radius: 50% 50% 0% 0%;
+        left: -20%;
+        box-shadow: 0px -11px 20px -17px #000;
+
+    }
+
+    header .master-play .wave {
+        position: absolute;
+        top: -90px;
+        width: 40px;
+        height: 40px;
+        right: 40%;
+    }
+
+    header .master-play .wave .wave1 {
+        width: 8px;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+    header .song-slide nav .search {
+        display: auto;
+        display: flex;
+        width: 150px;
+        margin-right: 5px;
+    }
+
+    header .master-play .wave {
+        right: 44%;
+    }
+
+    header .menu-slide {
+        width: 70%;
+    }
+
+    header .song-slide .popular-song {
+        margin-top: 40px;
+    }
+    header .master-play .s-icon {
+        font-size: 12px;
+        margin: 5px 25px;
+    }
+
+}
+
+@media screen and (max-width:412px) {
+    header .song-slide nav ul li {
+        font-size: 10px;
+        margin-right: 7px;
+    }
+
+    header .song-slide nav .search {
+        width: 140px;
+    }
+
+    header .song-slide nav .popular-song {
+        margin-top: 60px;
+    }
+
+    header .master-play .wave {
+        right: 45%;
+    }
+
+    header .menu-slide {
+        width: 80%;
+    }
+
+}
