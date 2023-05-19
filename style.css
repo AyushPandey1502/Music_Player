@@ -316,7 +316,9 @@ header .master-play .icon .shuffle {
 }
 
 header .master-play .icon #download-music {
-    font-size: 20;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 20px;
     margin-left: 10px;
 }
 
@@ -413,7 +415,10 @@ header .master-play .s-icon {
     color: var(--color-white);
     font-size: 17.5px;
     margin: 5px 5px;
-    padding-left: 15px;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    /* padding-left: 15px; */
+    padding: 4px 8px;
     left: 100px;
     cursor: pointer;
 }
