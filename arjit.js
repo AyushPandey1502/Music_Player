@@ -5,80 +5,80 @@ music.play();
 const songs = [
     {
         id: '1',
-        songName: ` On My Way <br>
-        <div class="subtitle">Alan Walker</div>`,
+        songName: ` Ashq Na Ho <br>
+        <div class="subtitle">Holiday</div>`,
         poster: "img/arjit/1.jpg"
     },
     {
         id: '2',
-        songName: ` Alan Walker-Fade <br>
-        <div class="subtitle">Alan Walker</div>`,
+        songName: ` Khairiyat <br>
+        <div class="subtitle">Chhichhore</div>`,
         poster: "img/arjit/2.jpg"
     },
     // all object type 
     {
         id: "3",
-        songName: `Cartoon - On & On <br><div class="subtitle"> Daniel Levi</div>`,
+        songName: `Desh Mere <br><div class="subtitle"> Bhuj</div>`,
         poster: "img/arjit/3.jpg",
     },
     {
         id: "4",
-        songName: `Warriyo - Mortals <br><div class="subtitle">Mortals</div>`,
+        songName: `Dhokha Song <br><div class="subtitle">Dhoka</div>`,
         poster: "img/arjit/4.jpg",
     },
     {
         id: "5",
-        songName: `Ertugrul Gazi <br><div class="subtitle">Ertugrul</div>`,
+        songName: `Tera Yaar Hoon Mai <br><div class="subtitle">Arjit Singh</div>`,
         poster: "img/arjit/5.jpg",
     },
     {
         id: "6",
-        songName: `Electronic Music <br><div class="subtitle">Electro</div>`,
+        songName: `Rang-Sari <br><div class="subtitle">ABCD - Any Body Can Dance 2</div>`,
         poster: "img/arjit/6.jpg",
     },
     {
         id: "7",
-        songName: `Agar Tum Sath Ho <br><div class="subtitle">Tamashaa</div>`,
+        songName: `Galti Se Mistake <br><div class="subtitle">Jagga Jasoos</div>`,
         poster: "img/arjit/7.jpg",
     },
     {
         id: "8",
-        songName: `Suna Hai <br><div class="subtitle">Neha Kakker</div>`,
+        songName: `Humari Adhuri Kahani <br><div class="subtitle">Humari Adhuri Kahani</div>`,
         poster: "img/arjit/8.jpg",
     },
     {
         id: "9",
-        songName: `Dilbar <br><div class="subtitle">Satyameva Jayate</div>`,
+        songName: `150 Minutes To Save Life <br><div class="subtitle">Traffic</div>`,
         poster: "img/arjit/9.jpg",
     },
     {
         id: "10",
-        songName: `Duniya <br><div class="subtitle">Luka Chuppi</div>`,
+        songName: `Humdard <br><div class="subtitle">Ek Villian</div>`,
         poster: "img/arjit/10.jpg",
     },
     {
         id: "11",
-        songName: `Lagdi Lahore Di <br><div class="subtitle">Street Dancer 3D</div>`,
+        songName: `Mere Yara <br><div class="subtitle">Suryavanshi</div>`,
         poster: "img/arjit/11.jpg",
     },
     {
         id: "12",
-        songName: `Putt Jatt Da <br><div class="subtitle">Putt Jatt Da</div>`,
+        songName: `Befikre <br><div class="subtitle">Befikre</div>`,
         poster: "img/arjit/12.jpg",
     },
     {
         id: "13",
-        songName: `Baarishein <br><div class="subtitle">Atif Aslam</div>`,
+        songName: `Ae Watan <br><div class="subtitle">Raazi</div>`,
         poster: "img/arjit/13.jpg",
     },
     {
         id: "14",
-        songName: `Vaaste <br><div class="subtitle">Dhvani Bhanushali</div>`,
+        songName: `Agar Tum Saath Ho <br><div class="subtitle">Tamasha</div>`,
         poster: "img/arjit/14.jpg",
     },
     {
         id: "15",
-        songName: `Lut Gaye <br><div class="subtitle">Jubin Nautiyal</div>`,
+        songName: `Pachtaoge <br><div class="subtitle">Arjit Singh</div>`,
         poster: "img/arjit/15.jpg",
     },
 ]
