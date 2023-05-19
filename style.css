@@ -14,11 +14,11 @@
     --color-blue: #111727;
     --color-white: #fff;
     --color-active: #36e2ec;
-    
+
     --box-shadow: #090f1f;
 }
 
-body.dark{
+body.dark {
     --bg-color: #7fb8d0;
     --color-slide: #eee;
     --color-light-blue: #c17a7a;
@@ -26,7 +26,7 @@ body.dark{
     --color-white: #832727;
     --color-active: rgb(196, 99, 99);
     --box-shadow: #afb4c3;
-  }
+}
 
 body {
     width: 100%;
@@ -544,7 +544,8 @@ header .song-slide nav .search::before {
 
 header .song-slide nav .search .bi {
     font-size: 13px;
-    padding: 3px 0px 0px 10px;}
+    padding: 3px 0px 0px 10px;
+}
 
 header .song-slide nav .search input {
     border: none;
@@ -555,6 +556,59 @@ header .song-slide nav .search input {
     font-size: 12px;
 }
 
+header .song-slide nav .search .search-result {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid var(--color-white); */
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+}
+header .song-slide nav .search .search-result::-webkit-scrollbar {
+    display: none;
+}
+
+header .song-slide nav .search .search-result .card{
+    width: 100%;
+    min-height: 45px;
+    /* border: 1px solid var(--color-white); */
+    display: none;
+    align-items: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    background: rgb(184, 184, 184, .1);
+    margin-bottom: 5px;
+}
+header .song-slide nav .search .search-result .card img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+header .song-slide nav .search .search-result .card .content{
+    width: 80%;
+    height: 100%;
+    border-radius: 1px solid #fff;
+    /* border-radius: 1px solid var(--color-white); */
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    /* color: var(--color-white); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+header .song-slide nav .search .search-result .card .content .subtitle{
+    font-size: 11px;
+    color: #a4a8b4;
+    font-weight: 500;
+}
 
 header .song-slide nav .user {
     position: relative;
@@ -562,14 +616,16 @@ header .song-slide nav .user {
     height: 30px;
     border-radius: 50%;
 }
-header .song-slide nav .user img{
+
+header .song-slide nav .user img {
     width: 100%;
     height: 100%;
     border: 1px solid var(--color-white);
     border-radius: 50%;
     box-shadow: 2px 2px 8px #121213;
 }
-header .song-slide .content{
+
+header .song-slide .content {
     width: 90%;
     height: 30%;
     /* border: 1px solid var(--color-white); */
@@ -577,22 +633,23 @@ header .song-slide .content{
     padding-top: 20px;
 }
 
-header .song-slide .content h1{
+header .song-slide .content h1 {
     font-size: 25px;
     font-weight: 600;
 }
-header .song-slide .content p{
+
+header .song-slide .content p {
     font-size: 11px;
     font-weight: 400;
     color: var(--color-light-blue);
     margin: 5px;
 }
 
-header .song-slide .content .buttons{
+header .song-slide .content .buttons {
     margin-top: 15px;
 }
 
-header .song-slide .content .buttons button{
+header .song-slide .content .buttons button {
     width: 130px;
     height: 30px;
     border: 2px solid var(--color-active);
@@ -604,22 +661,23 @@ header .song-slide .content .buttons button{
     transition: .3s linear;
 }
 
-header .song-slide .content .buttons button:hover{
+header .song-slide .content .buttons button:hover {
     background: none;
     color: var(--color-white);
 
 }
 
-header .song-slide .content .buttons button:nth-child(2){
+header .song-slide .content .buttons button:nth-child(2) {
     background: none;
     color: var(--color-active);
 }
-header .song-slide .content .buttons button:nth-child(2):hover{
+
+header .song-slide .content .buttons button:nth-child(2):hover {
     background: var(--color-active);
     color: var(--color-white);
 }
-    
-header .song-slide .popular-song{
+
+header .song-slide .popular-song {
     width: 90%;
     height: auto;
     margin: auto;
@@ -628,23 +686,23 @@ header .song-slide .popular-song{
     /* border: 1px solid var(--color-white); */
 }
 
-header .song-slide .popular-song .h4{
+header .song-slide .popular-song .h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header .song-slide .popular-song .h4 .bi{
+header .song-slide .popular-song .h4 .bi {
     color: #a4a8a4;
     cursor: pointer;
     transition: .3s linear;
 }
 
-header .song-slide .popular-song .h4 .bi:hover{
+header .song-slide .popular-song .h4 .bi:hover {
     color: var(--color-white);
 }
 
-header .song-slide .popular-song .pop-song{
+header .song-slide .popular-song .pop-song {
     width: 100%;
     height: 150px;
     margin-top: 15px;
@@ -653,21 +711,24 @@ header .song-slide .popular-song .pop-song{
     overflow: auto;
     scroll-behavior: smooth;
 }
-header .song-slide .popular-song .pop-song::-webkit-scrollbar{
+
+header .song-slide .popular-song .pop-song::-webkit-scrollbar {
     display: none;
 }
-    
-header .song-slide .popular-song .pop-song li{
+
+header .song-slide .popular-song .pop-song li {
     min-width: 100px;
     height: 140px;
     list-style-type: none;
     margin-right: 10px;
     transition: .3s linear;
 }
-header .song-slide .popular-song .pop-song li:hover{
+
+header .song-slide .popular-song .pop-song li:hover {
     background-color: rgb(105, 105, 170, .1);
 }
-header .song-slide .popular-song .pop-song li .img-play{
+
+header .song-slide .popular-song .pop-song li .img-play {
     position: relative;
     width: 100px;
     height: 100px;
@@ -676,39 +737,43 @@ header .song-slide .popular-song .pop-song li .img-play{
     justify-content: center;
 }
 
-header .song-slide .popular-song .pop-song li .img-play img{
+header .song-slide .popular-song .pop-song li .img-play img {
     width: 100%;
     height: 100%;
 }
 
-header .song-slide .popular-song .pop-song li .img-play .bi{
+header .song-slide .popular-song .pop-song li .img-play .bi {
     position: absolute;
     font-size: 20px;
     cursor: pointer;
     transition: .3s linear;
     opacity: 0;
 }
-header .song-slide .popular-song .pop-song li:hover .img-play .bi{
+
+header .song-slide .popular-song .pop-song li:hover .img-play .bi {
     opacity: 1;
 }
-header .song-slide .popular-song .pop-song li h5{
+
+header .song-slide .popular-song .pop-song li h5 {
     padding: 5px 0px 0px 5px;
     line-height: 15px;
     font-size: 10px;
     width: 100px;
-    overflow:hidden;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 
 }
-header .song-slide .popular-song .pop-song li h5 .subtitle{
+
+header .song-slide .popular-song .pop-song li h5 .subtitle {
     font-size: 9px;
-    overflow:hidden;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    color:var(--color-light-blue) ;
+    color: var(--color-light-blue);
 }
-header .song-slide .popular-artists{
+
+header .song-slide .popular-artists {
     width: 90%;
     height: auto;
     /* border: 1px solid #fff; */
@@ -717,23 +782,23 @@ header .song-slide .popular-artists{
 }
 
 
-header .song-slide .popular-artists .h4{
+header .song-slide .popular-artists .h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header .song-slide .popular-artists .h4 .bi{
+header .song-slide .popular-artists .h4 .bi {
     color: #a4a8a4;
     cursor: pointer;
     transition: .3s linear;
 }
 
-header .song-slide .popular-artists .h4 .bi:hover{
+header .song-slide .popular-artists .h4 .bi:hover {
     color: var(--color-white);
 }
 
-header .song-slide .popular-artists .item{
+header .song-slide .popular-artists .item {
     width: 100%;
     height: auto;
     margin-top: 15px;
@@ -741,7 +806,8 @@ header .song-slide .popular-artists .item{
     overflow: auto;
     scroll-behavior: smooth;
 }
-header .song-slide .popular-artists .item li{
+
+header .song-slide .popular-artists .item li {
     list-style-type: none;
     position: relative;
     min-width: 60px;
@@ -750,14 +816,13 @@ header .song-slide .popular-artists .item li{
     margin-right: 20px;
     cursor: pointer;
 }
-header .song-slide .popular-artists .item li img{
+
+header .song-slide .popular-artists .item li img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-header .song-slide .popular-artists .item::-webkit-scrollbar{
+header .song-slide .popular-artists .item::-webkit-scrollbar {
     display: none;
 }
-
-

@@ -114,6 +114,66 @@ Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
     e.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 });
 
+// Search Data Start
+
+let search_result = document.getElementsByClassName('search-result')[0];
+
+songs.forEach(element => {
+    const { id, songName, poster } = element;
+    let card = document.createElement('a');
+    card.classList.add('card');
+    card.href = '#' + id;
+    card.innerHTML = `
+    <img src="${poster}" alt="">
+    <div class="content">
+        ${songName}
+    </div>
+    `;
+    search_result.appendChild(card);
+});
+
+let input = document.getElementsByTagName('input')[0];
+
+input.addEventListener('keyup', () => {
+    let input_value = input.value.toUpperCase();
+    let items = search_result.getElementsByClassName('a');
+
+    for (let i = 0; i < items.length; i++) {
+        let as = items[i].getElementsByClassName('content')[0];
+        let text_value = as.textContent || as.innerHTML;
+
+        if (text_value.toUpperCase().indexOf(input_value) > -1) {
+            // items[i].style.display ='flex';
+            items[i].setAttribute('style', 'display: flex;');
+
+        } else {
+            // items[i].style.display ='none';
+            items[i].setAttribute('style', 'display: none;');
+
+        }
+
+        if (input.value == 0) {
+            // search_result.style.display ='none';
+            search_result.setAttribute('style', 'display: none;');
+
+        } else {
+            // search_result.style.display ='';
+            search_result.setAttribute('style');
+
+        }
+
+    }
+
+
+})
+
+
+
+//Search Data End
+
+
+
+
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementById('wave');
 
@@ -150,7 +210,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
         music.src = `audio/${index}.mp3`;
-        poster_master_play.src =`img/${index}.jpg`;
+        poster_master_play.src = `img/${index}.jpg`;
         music.play();
         masterPlay.classList.remove("bi-play-fill");
         masterPlay.classList.add("bi-pause-fill");
